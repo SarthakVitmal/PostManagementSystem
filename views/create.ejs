@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style_create.css">
+    <title>Create Post</title>
+</head>
+<body>
+    <div class="display">
+    <h1>Create Your Post</h1>
+    <form method="post" action="/home">
+        <input placeholder="Enter Your Username" name="username" class="username" required>
+        <br><br>
+        <label for="image">Upload the link of picture which you want to Post: </label>
+        <input type="text" id="image" name="image" title="Browse" placeholder="Paste your link here" required><br><br>
+        <textarea name="caption" placeholder="Write a caption...." required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

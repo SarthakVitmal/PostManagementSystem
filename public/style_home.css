@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: #dde4e3;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family:sans-serif;
+    color:white;
+    padding-left: 10px;
+
+}
+
+.post_section{
+    background-color:#f5faff;
+    border: 1px double black;
+    margin: 30px;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.username{
+    font-style: italic;
+    color:crimson;
+    padding: 5px;
+}
+
+.captions{
+    color:darkred;
+    font-size: 16px;
+    padding: 5px;
+
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 30px 0px 50px;
+    border-radius: 10px;
+}
+
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.editPost{
+    text-decoration: underline;
+    color:#00022e;
+    position: relative;
+    top:25px
+}
+
+.editPost:hover{
+    text-decoration: underline;
+}
+
+.deletePost{
+    padding: 5px;
+    background-color: #f5faff;
+    border-radius: 5px;
+    margin-left: 270px;
+}
+
+nav{
+    height: 60px;
+    background-color: #1166ff;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.createPost{
+    text-decoration: underline;
+    color:white;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 1400px;
+}

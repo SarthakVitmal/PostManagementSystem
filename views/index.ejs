@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_home.css">
+    <title>Post</title>
+</head>
+<body>
+    <nav>
+    <h1> <i class="fa-solid fa-p" style="color: #f7f9fd;"></i><i class="fa-solid fa-o" style="color: #f2f2f3;"></i><i class="fa-solid fa-s" style="color: #f1f2f3;"></i><i class="fa-solid fa-t" style="color: #e8eaee;"></i></h1>
+    <a class="createPost" href="http://localhost:8080/home/create"><i class="fa-solid fa-plus" style="color: #ffffff; font-size: 35px;"></i></a>
+    </nav>
+    <div class="display">
+    <%for(d of data){%>
+    <div class="post_section">
+    <h3 class="username">Username : @<%=d.username%></h3>
+    <h3 class="captions" name="caption">Caption : <%=d.caption%></h3>
+    <image class="image" src="<%=d.image%>"></image><br><br>    
+    <a type="button" class="editPost" href="http://localhost:8080/home/<%=d.username%>/<%=d.id%>/edit">Edit Post</a>
+    <form method="post" action="/home/<%=d.username%>/<%=d.id%>?_method=Delete">
+    <button type="submit" class="deletePost"><i class="fa-solid fa-trash"></i></button>
+    </form>
+    </div>
+    <%}%>
+</div>
+
+</body>
+</html>
